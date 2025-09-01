@@ -62,39 +62,50 @@
 </head>
 <body>
   <h1>Hype Launcher – Privacy Policy</h1>
-  <p><strong>Last updated:</strong> August 30, 2025</p>
+  <p><strong>Last updated:</strong> September 2, 2025</p>
   <p>
     Hype Launcher (“the App”) is developed and maintained by Aryan Srivastava & Aryan Poonia (“we,” “our,” or “us”). This Privacy Policy explains how we handle your information when you use the App. Your privacy is our top priority.
   </p>
 
   <h2>1. Information We Collect</h2>
-  <p>Our guiding principle is to be a launcher that respects your privacy. We do <strong>not</strong> collect, store, or share any personally identifiable information (PII) from your device.</p>
+  <p>Our guiding principle is to collect the minimum amount of data necessary. We do <strong>not</strong> collect any personally identifiable information (PII) like your name, email, or contacts.</p>
   
   <h3>a) Information You Provide Voluntarily:</h3>
-  <p>For features like the "Dev Panel," you may voluntarily provide your usernames for third-party services (e.g., LeetCode, Codeforces). This information is sent directly to those services' public APIs to fetch your profile data and is stored locally and encrypted on your device. We do not have access to it.</p>
+  <p>For features like the "Dev Panel," you may provide your usernames for third-party services (e.g., LeetCode, Codeforces). This information is sent directly to those services' public APIs to fetch your profile data and is stored locally on your device.</p>
   
-  <h3>b) Data Processed on Your Device:</h3>
-  <p>All other data, such as your list of installed apps, app usage statistics, and to-do list items, remains exclusively on your device. This data is never sent to us or any third party.</p>
+  <h3>b) Anonymous Usage & Crash Data (Analytics):</h3>
+  <p>
+    If you provide consent during the app's setup, we use Google's Firebase services to collect anonymous, aggregated data to help us improve the app and fix bugs. This includes:
+  </p>
+  <ul>
+      <li><strong>Firebase Analytics:</strong> Helps us understand which features are most popular and general usage patterns. This data is completely anonymous and cannot be used to identify you.</li>
+      <li><strong>Firebase Crashlytics:</strong> If the app crashes, this service sends us an anonymous report with technical information (e.g., device type, OS version, and the location of the crash in the code) so we can find and fix the bug.</li>
+  </ul>
+  <p>
+      This data collection is **optional**. You can opt-out at any time from the app's permission screen or settings. For more information, you can review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+  </p>
 
   <h2>2. Permissions Requested</h2>
   <p>The App requests the following Android permissions solely to provide its features. All data processed for these features remains on your device.</p>
   <ul>
-    <li><strong>INTERNET:</strong> To fetch data from online services like Codeforces/LeetCode for the Dev Panel.</li>
+    <li><strong>INTERNET:</strong> To fetch data for the Dev Panel and to send anonymous analytics/crash reports if you have provided consent.</li>
     <li><strong>PACKAGE_USAGE_STATS:</strong> To display your app usage statistics on your device.</li>
     <li><strong>POST_NOTIFICATIONS:</strong> To send you local notifications.</li>
     <li><strong>BIND_NOTIFICATION_LISTENER_SERVICE:</strong> To enable features like hiding notifications from your selected hidden apps.</li>
-    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To ensure the launcher starts correctly and reliably after your device reboots.</li>
+    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To ensure the launcher starts correctly after your device reboots.</li>
     <li><strong>REQUEST_DELETE_PACKAGES:</strong> To allow you to uninstall apps directly from the launcher.</li>
     <li><strong>FOREGROUND_SERVICE:</strong> Required by modern Android for reliable background tasks, such as updating app usage stats.</li>
-    <li><strong>EXPAND_STATUS_BAR:</strong> To provide quick access gestures that interact with the status bar.</li>
     <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> To secure your hidden apps with your device's biometrics.</li>
-    <li><strong>VIBRATE:</strong> To provide haptic feedback for interactions like gestures and taps.</li>
-    <li><strong>ACCESS_NETWORK_STATE:</strong> Used by libraries to check for an internet connection before attempting to fetch data for features like the Dev Panel.</li>
+    <li><strong>VIBRATE:</strong> To provide haptic feedback for interactions.</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> Used by libraries like Firebase to check for an internet connection before sending data.</li>
   </ul>
 
   <h2>3. Third-Party Services</h2>
-  <p>The App does <strong>not</strong> use advertising SDKs, analytics trackers, or crash reporting tools.</p>
-  <p>The only third-party services used are the public APIs of LeetCode and Codeforces, which are called only when you explicitly use the Dev Panel feature.</p>
+  <p>The App uses the following third-party services:</p>
+  <ul>
+      <li><strong>Google Firebase (Analytics & Crashlytics):</strong> For anonymous usage and crash reporting, if you provide consent.</li>
+      <li><strong>Public APIs of LeetCode and Codeforces:</strong> To provide data for the Dev Panel feature, called only when you use it.</li>
+  </ul>
 
   <h2>4. Data Security</h2>
   <p>All your personal settings, to-do lists, and app data are stored locally on your device. We do not transmit this data to our servers. You are responsible for securing your device.</p>
@@ -114,3 +125,4 @@
   </footer>
 </body>
 </html>
+
