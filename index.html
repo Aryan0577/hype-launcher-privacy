@@ -62,7 +62,7 @@
 </head>
 <body>
   <h1>Phi Launcher – Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 21, 2025</p>
+  <p><strong>Last updated:</strong> December 25, 2025</p>
   <p>
     Phi Launcher (“the App”) is developed and maintained by Aryan Srivastava & Aryan Poonia (“we,” “our,” or “us”). This Privacy Policy explains how we handle your information when you use the App. Your privacy is our top priority.
   </p>
@@ -81,31 +81,32 @@
       <li><strong>Firebase Crashlytics:</strong> If the app crashes, this service sends us an anonymous report with technical information (e.g., device type, OS version, and the location of the crash in the code) so we can find and fix the bug.</li>
   </ul>
   <p>
-      This data collection is **optional**. You can opt-out at any time from the app's permission screen or settings. For more information, you can review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+      This data collection is <strong>optional</strong>. You can opt-out at any time from the app's permission screen or settings. For more information, you can review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
   </p>
   
 
   <h2>2. In-App Purchases</h2>
-  <p>Phi Launcher offers optional premium features through a one-time purchase, managed by the Google Play Billing service. We use the `com.android.vending.BILLING` permission to facilitate these transactions. We do not collect or store your payment information (like credit card numbers). All payment processing is handled securely by Google. You can review <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments' Privacy Notice</a>.</p>
+  <p>Phi Launcher offers optional premium features through a one-time purchase, managed by the Google Play Billing service. We use the <code>com.android.vending.BILLING</code> and <code>CHECK_LICENSE</code> permissions to facilitate these transactions and verify ownership. We do not collect or store your payment information (like credit card numbers). All payment processing is handled securely by Google. You can review <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments' Privacy Notice</a>.</p>
 
   <h2>3. Permissions Requested</h2>
   <p>The App requests the following Android permissions solely to provide its features. All data processed for these features remains on your device unless specified below.</p>
   <ul>
     <li><strong>INTERNET:</strong> Required to fetch data for online features (like the Dev Panel), process payments, and send anonymous analytics/crash reports if you have provided consent.</li>
-    <li><strong>com.android.vending.BILLING:</strong> To handle in-app purchases for premium features through Google Play.</li>
+    <li><strong>com.android.vending.BILLING / CHECK_LICENSE:</strong> To handle in-app purchases for premium features and verify that the app was downloaded from the Google Play Store.</li>
+    <li><strong>BIND_APPWIDGET:</strong> Essential for the launcher functionality, allowing you to add, view, and interact with widgets from other installed applications on your home screen.</li>
     <li><strong>ACCESS_NETWORK_STATE:</strong> Used by libraries like Firebase and Google Play to check for an internet connection before sending data.</li>
-    <li><strong>com.google.android.gms.permission.AD_ID / android.permission.ACCESS_ADSERVICES_AD_ID / android.permission.ACCESS_ADSERVICES_ATTRIBUTION / com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE:</strong> Used for anonymous analytics, advertising, and install attribution.</li>
-    <li><strong>PACKAGE_USAGE_STATS:</strong> To display your app usage statistics on your device.</li>
+    <li><strong>AD_ID / ACCESS_ADSERVICES (Ad & Attribution):</strong> Includes <code>com.google.android.gms.permission.AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code>, and <code>BIND_GET_INSTALL_REFERRER_SERVICE</code>. Used strictly for anonymous analytics and install attribution via Google Play Services and the Android Privacy Sandbox.</li>
+    <li><strong>PACKAGE_USAGE_STATS:</strong> To display your app usage statistics and dashboard on your device.</li>
     <li><strong>POST_NOTIFICATIONS:</strong> To send you local notifications (e.g., for to-do reminders).</li>
     <li><strong>BIND_NOTIFICATION_LISTENER_SERVICE:</strong> To read active notifications, enabling features like hiding notifications from selected apps or for the music widget.</li>
-    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To ensure the launcher starts correctly after your device reboots.</li>
-    <li><strong>REQUEST_DELETE_PACKAGES:</strong> To allow you to uninstall apps directly from the launcher.</li>
-    <li><strong>FOREGROUND_SERVICE:</strong> Required by modern Android for reliable background tasks, such as updating app usage stats.</li>
-    <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> To secure your hidden apps with your device's biometrics.</li>
-    <li><strong>VIBRATE:</strong> To provide haptic feedback for interactions.</li>
-    <li><strong>EXPAND_STATUS_BAR:</strong> To allow the launcher to show or hide the status bar (e.g., in full-screen mode or via gestures).</li>
-    <li><strong>WAKE_LOCK:</strong> To prevent the device from sleeping during critical operations, ensuring tasks complete reliably.</li>
-    <li><strong>com.launcher.hype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION:</strong> A custom permission for internal app processes, ensuring components can communicate securely.</li>
+    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To ensure the launcher starts correctly immediately after your device reboots.</li>
+    <li><strong>REQUEST_DELETE_PACKAGES:</strong> To allow you to uninstall apps directly from the launcher home screen or drawer.</li>
+    <li><strong>FOREGROUND_SERVICE:</strong> Required by modern Android versions to perform reliable background tasks, such as updating app usage statistics or playing music widgets.</li>
+    <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> To secure your hidden apps folder or locked features using your device's biometric security.</li>
+    <li><strong>VIBRATE:</strong> To provide haptic feedback for user interactions (e.g., long-pressing icons).</li>
+    <li><strong>EXPAND_STATUS_BAR:</strong> To allow the launcher to show or hide the status bar (e.g., in full-screen mode or via gesture controls).</li>
+    <li><strong>WAKE_LOCK:</strong> To prevent the device from sleeping during critical short-term operations, ensuring tasks complete reliably.</li>
+    <li><strong>com.launcher.hype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION:</strong> A security permission used internally to ensure that the app's components communicate securely without being exposed to other apps.</li>
   </ul>
 
   <h2>4. Third-Party Services</h2>
