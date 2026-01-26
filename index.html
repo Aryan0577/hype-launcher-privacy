@@ -62,7 +62,7 @@
 </head>
 <body>
   <h1>Phi Launcher – Privacy Policy</h1>
-  <p><strong>Last updated:</strong> January 6, 2026</p>
+  <p><strong>Last updated:</strong> January 27, 2026</p>
   <p>
     Phi Launcher (“the App”) is developed and maintained by Aryan Srivastava & Aryan Poonia (“we,” “our,” or “us”). This Privacy Policy explains how we handle your information when you use the App. Your privacy is our top priority.
   </p>
@@ -92,6 +92,13 @@
   <p>The App requests the following Android permissions solely to provide its features. All data processed for these features remains on your device unless specified below.</p>
   <ul>
     <li><strong>INTERNET:</strong> Required to fetch data for online features (like the Dev Panel), process payments, and send anonymous analytics/crash reports if you have provided consent.</li>
+    <li><strong>BIND_ACCESSIBILITY_SERVICE:</strong> This permission is used specifically for the "Lock Screen" feature (e.g., Double Tap to Sleep). The Accessibility Service API is used <strong>solely</strong> to perform the system-level action of locking the screen. We do not use this service to read your screen content, collect keystrokes, or track your interactions.</li>
+    <li><strong>BIND_NOTIFICATION_LISTENER_SERVICE:</strong> Required for two specific features:
+        <ul>
+            <li><strong>Music Widget:</strong> To display media controls and track information from your active music player.</li>
+            <li><strong>Hidden Apps:</strong> To automatically suppress notifications from apps you have selected to hide.</li>
+        </ul>
+    </li>
     <li><strong>READ_CONTACTS:</strong> Required for the "Global Search" feature. This allows you to search for and view contact details directly from the launcher search bar. This data is processed locally on your device and is never uploaded to our servers.</li>
     <li><strong>READ_CALENDAR:</strong> Required for the "Global Search" feature to display your upcoming calendar events and schedule. This data remains on your device.</li>
     <li><strong>com.android.vending.BILLING / CHECK_LICENSE:</strong> To handle in-app purchases for premium features and verify that the app was downloaded from the Google Play Store.</li>
@@ -99,9 +106,9 @@
     <li><strong>ACCESS_NETWORK_STATE:</strong> Used by libraries like Firebase and Google Play to check for an internet connection before sending data.</li>
     <li><strong>AD_ID / ACCESS_ADSERVICES (Ad & Attribution):</strong> Used strictly for anonymous analytics and install attribution via Google Play Services and the Android Privacy Sandbox.</li>
     <li><strong>PACKAGE_USAGE_STATS:</strong> To display your app usage statistics and dashboard on your device.</li>
-    <li><strong>BIND_NOTIFICATION_LISTENER_SERVICE:</strong> To read active notifications, enabling features like hiding notifications from selected apps or for the music widget.</li>
     <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To ensure the launcher starts correctly immediately after your device reboots.</li>
     <li><strong>REQUEST_DELETE_PACKAGES:</strong> To allow you to uninstall apps directly from the launcher home screen or drawer.</li>
+    <li><strong>POST_NOTIFICATIONS:</strong> To display important alerts, such as download progress or updates regarding the launcher's status.</li>
     <li><strong>FOREGROUND_SERVICE:</strong> Required by modern Android versions to perform reliable background tasks, such as updating app usage statistics or playing music widgets.</li>
     <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> To secure your hidden apps folder or locked features using your device's biometric security.</li>
     <li><strong>VIBRATE:</strong> To provide haptic feedback for user interactions (e.g., long-pressing icons).</li>
@@ -127,7 +134,7 @@
 
   <h2>8. Contact Us</h2>
   <p>If you have questions about this Privacy Policy, you can contact us at:</p>
-  <p><strong>Email:</strong> <a href="mailto:aryzium@gmail.com">aryzium@gmail.com</a></p>
+  <p><strong>Email:</strong> <a href="mailto:support@philauncher.com">support@philauncher.com</a></p>
 
   <footer>
     &copy; 2026 Aryan Srivastava & Aryan Poonia. All rights reserved.
